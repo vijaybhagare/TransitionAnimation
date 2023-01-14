@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="navigation_view">
+
+
+<item android:id="@+id/home"
+        android:title="Home"></item>
+
+    <item android:title="Personal Details">
+        <menu>
+
+
+        <item android:id="@+id/item2"
+        android:title="item1"></item>
+
+    <item android:id="@+id/item3"
+        android:title="item2"></item>
+
+        </menu>
+    </item>
+
+
+    <item android:title="About">
+
+
+        <menu>
+            <item android:id="@+id/term_condition"
+                android:title="Terms and Conditions"></item>
+
+            <item android:id="@+id/about_us"
+                android:title="About Us"></item>
+
+        </menu>
+    </item>
+
+
+    <item android:title="Logout">
+
+        <menu>
+
+            <item android:id="@+id/exit"
+                android:title="Exit"></item>
+
+        </menu>
+    </item>
+
+
+</menu>

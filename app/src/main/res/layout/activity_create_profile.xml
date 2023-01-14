@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#D7EAEA1C"
+    android:layout_height="match_parent"
+    tools:context=".Activitys.Create_profile">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+         android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_profile"
+                android:layout_width="match_parent"
+                android:layout_margin="20dp"
+                android:paddingBottom="50dp"
+                app:cardCornerRadius="20dp"
+
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/img_take_photo"
+                        android:layout_width="150dp"
+                        android:src="@drawable/men1"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="50dp"
+                        android:layout_height="150dp"></de.hdodenhof.circleimageview.CircleImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="Take Picture"
+                        android:layout_marginLeft="100dp"
+                        android:layout_height="wrap_content"></TextView>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="14dp"
+                    app:hintTextColor="@color/black"
+                    android:layout_marginEnd="32dp"
+                    app:endIconMode="clear_text"
+                    app:endIconTint="@color/black"
+                    android:hint="Enter Name">
+
+                    <!--this is the actual edit text which takes the input-->
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_profile_activity_fullname"
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="14dp"
+                        app:hintTextColor="@color/black"
+                        android:layout_marginEnd="32dp"
+                        app:endIconMode="clear_text"
+                        app:endIconTint="@color/black"
+                        android:hint="Enter Username">
+
+                        <!--this is the actual edit text which takes the input-->
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/et_profile_activity_username"
+                            android:textColor="@color/black"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="14dp"
+                        app:hintTextColor="@color/black"
+                        android:layout_marginEnd="32dp"
+                        app:endIconMode="clear_text"
+                        app:endIconTint="@color/black"
+                        android:hint="Enter Mobile No:">
+
+                        <!--this is the actual edit text which takes the input-->
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/et_profile_activity_mobile_no"
+                            android:textColor="@color/black"
+                            android:inputType="number"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="14dp"
+                        app:hintTextColor="@color/black"
+                        android:layout_marginEnd="32dp"
+                        app:endIconMode="clear_text"
+                        app:endIconTint="@color/black"
+                        android:hint="Enter Address">
+
+                        <!--this is the actual edit text which takes the input-->
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/et_profile_activity_address"
+                            android:textColor="@color/black"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="14dp"
+                        app:hintTextColor="@color/black"
+                        android:layout_marginEnd="32dp"
+                        app:endIconMode="clear_text"
+                        app:endIconTint="@color/black"
+                        android:hint="Enter City">
+
+                        <!--this is the actual edit text which takes the input-->
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/et_profile_activity_city"
+                            android:textColor="@color/black"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="14dp"
+                        app:hintTextColor="@color/black"
+                        android:layout_marginEnd="32dp"
+                        app:endIconMode="clear_text"
+                        app:endIconTint="@color/black"
+                        android:hint="Enter State">
+
+                        <!--this is the actual edit text which takes the input-->
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/et_profile_activity_state"
+                            android:textColor="@color/black"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                    <Button
+                        android:id="@+id/btn_continue_create_profile"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="50dp"
+                        android:layout_marginTop="50dp"
+                        android:layout_width="wrap_content"
+                        android:text="Continue"
+                        android:layout_height="wrap_content"></Button>
+
+
+
+<!--                    -->
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+    </RelativeLayout>
+
+</ScrollView>
